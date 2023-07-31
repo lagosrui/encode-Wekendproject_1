@@ -1,0 +1,17 @@
+Wallets adresses:
+    contract: 0x29dd68677a7664f5ebd6180c5aa0b761e42390c7
+    Gonçalo Wallet : 0x3b3449A0F72a4282DA4F8e87F831f7c94e2140Be
+    Rui Wallet : 0xA055dEc35EC8E5b8ED1DBF7cE85b2f5c809D2Aa6
+    Rodrigo Wallet: 
+
+
+
+function setText: 
+    Hash: 0xb3d414544e2c8d5e29b77c806dcb8a16469618b428cb43a5fb79a68794fbe72e
+    from: Gonçalo Wallet 
+    new Text: Hello World was deployed
+
+function transferOwnership: 
+    Hash: 0xa9c0b735602336b09a684896ddf91d5356ac91ff1da575d0d7371ee294cf12a4
+    from: Gonçalo Wallet
+    to:  Rui Wallet 

@@ -5,24 +5,37 @@
 -Gonçalo Almeida
 -Rui Lagos
 
-<h3>Contract : 0x60f0F4323e89FE6fb35D180945fd02BB0eA71F04</h3>
-https://sepolia.etherscan.io/address/0x60f0f4323e89fe6fb35d180945fd02bb0ea71f04#code
+The contract
+<h3>Contract : 0x29dd68677a7664f5ebd6180c5aa0b761e42390c7</h3>
+<h3>Etherscan> https://sepolia.etherscan.io/address/0x29dd68677a7664f5ebd6180c5aa0b761e42390c7</h3>
 
 The contract we used: https://github.com/Encode-Club-Solidity-Bootcamp/Lesson-04
 We added two functions to the contract that allow the possibility of storing all addresses that were owners and the ability to view which past owners are registered.
 
-Functions Report:
 
-constructor(): Initializes the contract with the "Hello World" text and sets the deployer's address as the owner and adds that address to the onlyOwnersWallets array.
 
-helloWorld(): It simply returns the current value of the text variable and anyone can call it.
+Constructor: 
+    Initializes the contract with the "Hello World" text and sets the deployer's address as the owner 
+    and adds that address to the onlyOwnersWallets array
 
-setText(string calldata newText): Allows the owner to update the text variable to a new value the first change it was to "Rui Lagos".
+Modifiers:
+    modifier onlyOwner(): Checks if the sender of the transaction is the same as the owner of the contract. 
+    If the condition is met ( the sender is the owner), then the actual function that uses this modifier is executed. 
+    Otherwise, the transaction is reverted with an error message.
 
-transferOwnership(address newOwner): Allows the current owner to transfer ownership to a new address (newOwner). Then updates the owner and adds the new owner's address to the onlyOwnersWallets array.
+Functions:
+    helloWorld(): It simply returns the current value of the text variable and anyone can call it.
 
-modifier onlyOwner(): Checks if the sender of the transaction is the same as the owner of the contract. If the condition is met ( the sender is the owner), then the actual function that uses this modifier is executed. Otherwise, the transaction is reverted with an error message.
+    setText(string calldata newText): Allows the owner to update the text variable to a new value the first change it was to "Rui Lagos".
 
-getOnlyOwnersWalletsCount(): It simply returns the length of the onlyOwnersWallets array, which represents the number of wallet addresses stored
+    transferOwnership(address newOwner): Allows the current owner to transfer ownership to a new address (newOwner). 
+    Then updates the owner and adds the new owner's address to the onlyOwnersWallets array.
 
-getWalletByIndex(uint256 index): takes an number as input and returns the corresponding wallet address from the onlyOwnersWallets array by looking it up in the walletByIndex mapping. The walletByIndex mapping stores the address of each wallet at a specific index. The function first checks if the provided index is within the range of the onlyOwnersWallets array to avoid any out-of-bounds errors. If the index is valid, it retrieves the wallet address associated with that index from the walletByIndex mapping and returns it.
+View Functions:
+    getHowManyPastOwners(): It simply returns the length of the onlyOwnersWallets array, which represents the number of past or current owners
+
+    getWasOwner(): Takes an adress as input and returns if that wallet was or is a owner 
+
+    function getWhenWasOwner(): takes an adress of a current or past Owner and returns the index corresponding to the order
+
+    function getWhoWasOwner():  Takes an index as input and returns the adress of the owner in that index 
