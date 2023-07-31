@@ -15,23 +15,27 @@ We added two functions to the contract that allow the possibility of storing all
 
 
 Constructor: 
+
     Initializes the contract with the "Hello World" text and sets the deployer's address as the owner 
     and adds that address to the onlyOwnersWallets array
 
 Modifiers:
+
     modifier onlyOwner(): Checks if the sender of the transaction is the same as the owner of the contract. 
     If the condition is met ( the sender is the owner), then the actual function that uses this modifier is executed. 
     Otherwise, the transaction is reverted with an error message.
 
 Functions:
-    helloWorld(): It simply returns the current value of the text variable and anyone can call it.
 
+    helloWorld(): It simply returns the current value of the text variable and anyone can call it.
+    
     setText(string calldata newText): Allows the owner to update the text variable to a new value the first change it was to "Rui Lagos".
 
     transferOwnership(address newOwner): Allows the current owner to transfer ownership to a new address (newOwner). 
     Then updates the owner and adds the new owner's address to the onlyOwnersWallets array.
 
 View Functions:
+
     getHowManyPastOwners(): It simply returns the length of the onlyOwnersWallets array, which represents the number of past or current owners
 
     getWasOwner(): Takes an adress as input and returns if that wallet was or is a owner 
