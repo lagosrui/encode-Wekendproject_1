@@ -2,5 +2,16 @@ The first ownership transfer:
 
 Rui Wallet : 0xA055dEc35EC8E5b8ED1DBF7cE85b2f5c809D2Aa6
 Gonçalo Wallet : 0x3b3449A0F72a4282DA4F8e87F831f7c94e2140Be
+Rodrigo Wallet : 0xEbA2FB864376757D3640B8082c5F2211B95570D0
 
 link: https://sepolia.etherscan.io/tx/0x75a75e5824d39d6c1223d5442467b82d5fa80568b8c32d5328233895edb9b40a
+
+
+Rodrigo:
+
+  - Called the function "setText", with the string input equal to "Rodrigo Sarroeira". (block: 4000198, at: 1690815996)
+    tx hash: 0x9449142aadbe202267ed324e8edc69a059bc00c87eae7c50df81c7a1af7b6c38
+
+  - Called the function "transferOwnership", with the address input equal to 0x3b3449A0F72a4282DA4F8e87F831f7c94e2140Be,
+    which is Gonçalo's Wallet. (block: 4000200, at: 1690816020)
+    tx hash: 0xf37db654fa03c78ff419b31b1fdc2fb20a51fc215836a704aa1f78cf74baf400
