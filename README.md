@@ -5,7 +5,7 @@
 -Gonçalo Almeida
 -Rui Lagos
 
-<h3>Contract : 0x60f0F4323e89FE6fb35D180945fd02BB0eA71F04</h3>
+<h3>Contract : 0x99e321b0e73f0146cadfca5be6fdfe9851cbf18b</h3>
 https://sepolia.etherscan.io/address/0x60f0f4323e89fe6fb35d180945fd02bb0ea71f04#code
 
 The contract we used: https://github.com/Encode-Club-Solidity-Bootcamp/Lesson-04
